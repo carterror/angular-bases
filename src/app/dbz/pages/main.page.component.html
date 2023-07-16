@@ -1,0 +1,13 @@
+<h1>List for all items</h1>
+<div class="row">
+
+  <div class="col">
+    <app-dbz-list [charactersList]="characters" (onDeleteCharacter)="onDeleteCharacter($event)"></app-dbz-list>
+
+  </div>
+
+  <div class="col flex-column">
+    <app-dbz-add-character (onAddCharacter)="onAddCharacter($event)"></app-dbz-add-character>
+  </div>
+
+</div>
